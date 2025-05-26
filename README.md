@@ -13,7 +13,6 @@ The app simulates a real space launch scheduling system and integrates with the 
 - **React**
 - **RESTful APIs**
 - **SpaceX API**
-- **GraphQL**
 - **GitHub Actions (CI/CD)**
 
 ## 💻 Features
@@ -82,7 +81,12 @@ Defined in `package.json`:
 
 ## 🌐 Deployment
 
-This project is configured for deployment using GitHub Actions. The CI pipeline installs dependencies and builds the project automatically on every push to the `master` branch.
+This project is deployed on **AWS EC2** and runs inside a **Docker container**. The Docker image, containing the full **Monorepo**, is hosted on **Docker Hub** (private).
+
+- **Docker Image**: The full app (frontend and backend) is containerized in a single image.
+- **CI Pipeline**: This project is configured for deployment using **GitHub Actions**. The CI pipeline installs dependencies and builds the project automatically on every push to the `master` branch.
+
+🔗 **[Live Demo](http://16.170.226.199:8000/)**
 
 ## 🧠 Key Learnings
 
@@ -92,7 +96,6 @@ This project is configured for deployment using GitHub Actions. The CI pipeline 
 - Develop and deploy a full-stack MERN (MongoDB, Express, React, Node) application
 - Master the modern backend Node.js ecosystem from scratch
 - Build secure and performant large-scale applications with real production concerns
-- Develop RESTful and GraphQL APIs suitable for production environments
 - Understand and apply backend essentials: authentication, file handling, databases (SQL & MongoDB), websockets, and more
 - Implement DevOps concepts: load balancing, monitoring, CI/CD, and zero downtime deployments
 - Learn and apply security best practices for confident deployment and maintenance
